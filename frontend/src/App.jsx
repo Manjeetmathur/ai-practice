@@ -97,7 +97,7 @@ function App() {
         value={code}
         onChange={(e) => setCode(e.target.value)}
         placeholder="Type a message..."
-        className="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-4 bg-gray-950 rounded-md py-3"
+        className="w-full focus:outline-none focus:placeholder-gray-400 text-white placeholder-gray-600 pl-4 bg-gray-950 rounded-md py-3"
       />
       <div className="absolute right-0 items-center inset-y-0 hidden sm:flex">
         <button
