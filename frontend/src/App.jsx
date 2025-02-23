@@ -10,9 +10,9 @@ function App() {
   const messagesEndRef = useRef(null); // Ref for auto-scroll
 
   // Scroll to the latest message
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [codes]);
+  // useEffect(() => {
+  //   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  // }, [codes]);
 
   const review = async (e) => {
     e.preventDefault();
