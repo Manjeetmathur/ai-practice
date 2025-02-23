@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 function App() {
-  const backendUrl = "http://localhost:3000";
+  // const backendUrl = "http://localhost:3000";
+  const backendUrl = "https://ai-practice-backend.onrender.com";
   const [code, setCode] = useState("");
   const [codes, setCodes] = useState([]);
   const [loading, setLoading] = useState(false);
