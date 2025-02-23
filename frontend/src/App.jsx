@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="bg-gray-800 flex justify-center items-center min-h-screen w-full p-4">
-      <div className="relative flex flex-col w-full max-w-lg h-[85vh] bg-gray-700 rounded-lg shadow-2xl overflow-hidden">
+      <div className="relative flex flex-col w-full max-w-lg h-[85vh]  rounded-lg overflow-hidden">
         {/* Chat Messages */}
         <div className="flex flex-col w-full h-full p-4 space-y-2 overflow-auto">
           {codes.map((message, idx) => (
