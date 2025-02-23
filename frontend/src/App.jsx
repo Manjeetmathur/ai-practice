@@ -10,9 +10,9 @@ function App() {
   const messagesEndRef = useRef(null); // Ref for auto-scroll
 
   // Scroll to the latest message
-  // useEffect(() => {
-  //   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  // }, [codes]);
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [codes]);
 
   const review = async (e) => {
     e.preventDefault();
@@ -84,7 +84,7 @@ function App() {
   </div>
 
   {/* Chat Messages */}
-  <div className="flex-1  overflow-y-auto p-4 space-y-6 space-y-reverse bg-gray-950">
+  <div className="flex-1 flex flex-col-reverse overflow-y-auto p-4 space-y-6 space-y-reverse bg-gray-950">
     {codes.map((message, idx) => (
       <div
         key={idx}
