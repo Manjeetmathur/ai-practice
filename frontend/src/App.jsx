@@ -57,7 +57,7 @@ function App() {
 
      
       {/* Chat Messages */}
-      <div className="flex-1 flex flex-col-reverse overflow-y-auto p-4 space-y-6 space-y-reverse bg-gray-950">
+      <div className="flex-1 pb-[100px]  overflow-y-auto p-4 space-y-6 space-y-reverse bg-gray-950 ">
         {codes.map((message, idx) => (
           <div
             key={idx}
@@ -92,7 +92,7 @@ function App() {
       </div>
 
       {/* Chat Input */}
-      <div className="bg-gray-800 border-t-2 border-gray-200 px-4 pt-4 py-3">
+      <div className="bg-gray-800  border-t-2 border-gray-200 px-4 pt-4 py-3 w-full fixed bottom-0">
         <form onSubmit={review} className="relative flex">
           <input
             type="text"
