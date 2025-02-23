@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col h-[screen] ">
+    <div className="flex flex-col h-[100vh] overflow-hidden">
       {/* Chat Header */}
       <div className="bg-gray-900 shadow-md">
         <div className="max-w-3xl mx-auto py-3 px-4 flex items-center justify-between">
@@ -56,7 +56,7 @@ function App() {
       </div>
 
       {/* Chat Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-6 bg-gray-950">
+      <div className="flex-1 h-[70vh] overflow-y-auto p-4 space-y-6 bg-gray-950">
         {codes.map((message, idx) => (
           <div
             key={idx}
