@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import p1 from "/p1.jpg"
 function App() {
-  const backendUrl = "http://localhost:3000";
-  // const backendUrl = "https://ai-practice-backend.onrender.com";
+ // const backendUrl = "http://localhost:3000";
+   const backendUrl = "https://ai-practice-backend.onrender.com";
   const [code, setCode] = useState("");
   const [codes, setCodes] = useState([]);
   const [loading, setLoading] = useState(false);
