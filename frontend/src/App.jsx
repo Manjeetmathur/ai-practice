@@ -55,9 +55,21 @@ function App() {
         </div>
       </div>
 
-     
+
       {/* Chat Messages */}
       <div className="flex-1 pb-[100px]  overflow-y-auto p-4 space-y-6 space-y-reverse bg-gray-950 ">
+        <div className="max-w-3xl mx-auto py-3 px-4 flex items-center justify-between">
+          <div className="flex flex-col items-center space-y-4 my-5">
+            <img
+              src="https://i.pinimg.com/originals/d4/61/07/d46107547da46e04a2b0d343f324203c.jpg"
+              alt="Chat avatar"
+              className="w-[180px] h-[200px] rounded-full"
+            />
+          
+              <h1 className="text-4xl font-semibold text-blue-700 ">❤️My Love❤️</h1>
+            
+          </div>
+        </div>
         {codes.map((message, idx) => (
           <div
             key={idx}
